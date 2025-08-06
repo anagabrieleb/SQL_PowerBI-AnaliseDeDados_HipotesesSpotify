@@ -1,0 +1,93 @@
+SELECT 'total_charts' AS variavel,
+  CORR(total_charts, streams_int) AS streams,
+  CORR(total_charts, avg_streams_per_day) AS avg_streams,
+  CORR(total_charts, total_playlists) AS total_playlists,
+  CORR(total_charts, total_charts) AS total_charts,
+  CORR(total_charts, in_spotify_playlists) AS spotify_playlists,
+  CORR(total_charts, in_spotify_charts) AS spotify_charts,
+  CORR(total_charts, in_apple_playlists) AS apple_playlists,
+  CORR(total_charts, in_apple_charts) AS apple_charts,
+  CORR(total_charts, in_deezer_playlists) AS deezer_playlists,
+  CORR(total_charts, in_deezer_charts) AS deezer_charts,
+  CORR(total_charts, in_shazam_charts) AS shazam_charts,
+  CORR(total_charts, bpm) AS bpm,
+  CORR(total_charts, danceability) AS danceability,
+  CORR(total_charts, valence) AS valence,
+  CORR(total_charts, energy) AS energy,
+  CORR(total_charts, acousticness) AS acousticness,
+  CORR(total_charts, instrumentalness) AS instrumentalness,
+  CORR(total_charts, liveness) AS liveness,
+  CORR(total_charts, speechiness) AS speechiness
+FROM `lab025-p002.further_analysis.vw_union`
+
+UNION ALL
+
+SELECT 'total_playlists' AS variavel,
+  CORR(total_playlists, streams_int) AS streams,
+  CORR(total_playlists, avg_streams_per_day) AS avg_streams,
+  CORR(total_playlists, total_playlists) AS playlist,
+  CORR(total_playlists, total_charts) AS total_charts,
+  CORR(total_playlists, in_spotify_playlists) AS spotify_playlists,
+  CORR(total_playlists, in_spotify_charts) AS spotify_charts,
+  CORR(total_playlists, in_apple_playlists) AS apple_playlists,
+  CORR(total_playlists, in_apple_charts) AS apple_charts,
+  CORR(total_playlists, in_deezer_playlists) AS deezer_playlists,
+  CORR(total_playlists, in_deezer_charts) AS deezer_charts,
+  CORR(total_playlists, in_shazam_charts) AS shazam_charts,
+  CORR(total_playlists, bpm) AS bpm,
+  CORR(total_playlists, danceability) AS danceability,
+  CORR(total_playlists, valence) AS valence,
+  CORR(total_playlists, energy) AS corr_playlist_energy,
+  CORR(total_playlists, acousticness) AS corr_playlist_acousticness,
+  CORR(total_playlists, instrumentalness) AS corr_playlist_instrumentalness,
+  CORR(total_playlists, liveness) AS corr_playlist_liveness,
+  CORR(total_playlists, speechiness) AS corr_playlist_speechiness
+FROM `lab025-p002.further_analysis.vw_union`
+
+UNION ALL
+
+SELECT 'avg_streams_per_day' AS variavel,
+  CORR(avg_streams_per_day, streams_int) AS streams,
+  CORR(avg_streams_per_day, avg_streams_per_day) AS avg_streams,
+  CORR(avg_streams_per_day, total_playlists) AS total_playlists,
+  CORR(avg_streams_per_day, total_charts) AS total_charts,
+  CORR(avg_streams_per_day, in_spotify_playlists) AS spotify_playlists,
+  CORR(avg_streams_per_day, in_spotify_charts) AS spotify_charts,
+  CORR(avg_streams_per_day, in_apple_playlists) AS apple_playlists,
+  CORR(avg_streams_per_day, in_apple_charts) AS apple_charts,
+  CORR(avg_streams_per_day, in_deezer_playlists) AS deezer_playlists,
+  CORR(avg_streams_per_day, in_deezer_charts) AS deezer_charts,
+  CORR(avg_streams_per_day, in_shazam_charts) AS shazam_charts,
+  CORR(avg_streams_per_day, bpm) AS bpm,
+  CORR(avg_streams_per_day, danceability) AS danceability,
+  CORR(avg_streams_per_day, valence) AS valence,
+  CORR(avg_streams_per_day, energy) AS energy,
+  CORR(avg_streams_per_day, acousticness) AS acousticness,
+  CORR(avg_streams_per_day, instrumentalness) AS instrumentalness,
+  CORR(avg_streams_per_day, liveness) AS liveness,
+  CORR(avg_streams_per_day, speechiness) AS speechiness
+FROM `lab025-p002.further_analysis.vw_union`
+
+UNION ALL
+
+SELECT 'streams_int' AS variavel,
+  CORR(streams_int, streams_int) AS streams,
+  CORR(streams_int, avg_streams_per_day) AS avg_streams,
+  CORR(streams_int, total_playlists) AS total_playlists,
+  CORR(streams_int, total_charts) AS total_charts,
+  CORR(streams_int, in_spotify_playlists) AS spotify_playlists,
+  CORR(streams_int, in_spotify_charts) AS spotify_charts,
+  CORR(streams_int, in_apple_playlists) AS apple_playlists,
+  CORR(streams_int, in_apple_charts) AS apple_charts,
+  CORR(streams_int, in_deezer_playlists) AS deezer_playlists,
+  CORR(streams_int, in_deezer_charts) AS deezer_charts,
+  CORR(streams_int, in_shazam_charts) AS shazam_charts,
+  CORR(streams_int, bpm) AS bpm,
+  CORR(streams_int, danceability) AS danceability,
+  CORR(streams_int, valence) AS valence,
+  CORR(streams_int, energy) AS energy,
+  CORR(streams_int, acousticness) AS acousticness,
+  CORR(streams_int, instrumentalness) AS instrumentalness,
+  CORR(streams_int, liveness) AS liveness,
+  CORR(streams_int, speechiness) AS speechiness
+FROM `lab025-p002.further_analysis.vw_union`

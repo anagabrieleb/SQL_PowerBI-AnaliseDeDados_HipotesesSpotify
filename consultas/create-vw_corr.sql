@@ -1,0 +1,21 @@
+CREATE OR REPLACE VIEW `lab025-p002.further_analysis.corr_streams` AS
+SELECT 'streams_int' AS streams,
+  CORR(streams_int, avg_streams_per_day) AS avg_streams,
+  CORR(streams_int, total_playlists) AS total_playlists,
+  CORR(streams_int, total_charts) AS total_charts,
+  CORR(streams_int, in_spotify_playlists) AS spotify_playlists,
+  CORR(streams_int, in_spotify_charts) AS spotify_charts,
+  CORR(streams_int, in_apple_playlists) AS apple_playlists,
+  CORR(streams_int, in_apple_charts) AS apple_charts,
+  CORR(streams_int, in_deezer_playlists) AS deezer_playlists,
+  CORR(streams_int, in_deezer_charts) AS deezer_charts,
+  CORR(streams_int, in_shazam_charts) AS shazam_charts,
+  CORR(streams_int, bpm) AS bpm,
+  CORR(streams_int, danceability) AS danceability,
+  CORR(streams_int, valence) AS valence,
+  CORR(streams_int, energy) AS energy,
+  CORR(streams_int, acousticness) AS acousticness,
+  CORR(streams_int, instrumentalness) AS instrumentalness,
+  CORR(streams_int, liveness) AS liveness,
+  CORR(streams_int, speechiness) AS speechiness
+FROM `lab025-p002.further_analysis.vw_union`
