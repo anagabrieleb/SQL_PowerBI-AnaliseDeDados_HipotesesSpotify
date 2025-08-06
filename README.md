@@ -1,60 +1,70 @@
-# Nome do Projeto
+# SQL & Power BI: Análise de Dados e Validação de Hipóteses - Spotify
 
-> Breve descrição do projeto em 2-3 frases, explicando o propósito, motivação e problema que resolve.
-
-![Demonstração do sistema](link-para-gif-ou-imagem)
+> Projeto de Análise de Dados desenvolvido em dupla, como parte do Projeto 2 da Jornada de Dados da Laboratória. Exploramos uma base de dados de músicas do Spotify com o objetivo de validar hipóteses sobre o sucesso das faixas e entender as características que impulsionam sua performance nas plataformas de streaming.
 
 ## Funcionalidades Principais
 
-- Liste as principais funcionalidades do projeto.
-- Destaque o que é inovador ou diferencial.
+- Análise exploratória de dados musicais.
+- Agrupamento de variáveis técnicas e de performance.
+- Validação de 5 hipóteses relacionadas ao sucesso das faixas.
+- Criação de dashboards interativos em Power BI.
+- Documentação e apresentação dos resultados em formato visual e PDF.
 
 ## Resultados e Conclusões
 
-(Quando conter no projeto. Geralmente utilizado para projetos de datascience)
+- Identificamos que a presença em playlists é um dos principais fatores correlacionados ao número de streams.
+- BPMs mais altos e características técnicas equilibradas tendem a impulsionar a performance.
+- O sucesso não depende apenas das características da música, mas também de fatores externos e estratégicos.
+- As hipóteses foram validadas com diferentes níveis de confirmação, enriquecendo o entendimento sobre o comportamento das faixas no ecossistema digital.
 
 ## Tecnologias Utilizadas
 
-- Liste as principais tecnologias, frameworks e bibliotecas.
+- SQL no BigQuery: consultas e tratamento de dados
+- Power BI: visualizações e dashboards
 
 ## Como Executar
 
 1. Clone o repositório:
+
    ```
-   git clone https://github.com/usuario/repositorio.git
+   git clone https://github.com/vitoriapguimaraes/SQL_PowerBI-AnaliseDeDados_HipotesesSpotify.git
    ```
-2. Instale as dependências:
-   ```
-   comando de instalação
-   ```
-3. Execute o projeto:
-   ```
-   comando para rodar
-   ```
+
+2. Acesse as pastas conforme necessário:
+
+   - `consultas/`: scripts SQL utilizados.
+   - `dataset/`: base de dados utilizada.
+   - `powerbi/`: arquivo do dashboard em Power BI.
+   - `results/`: relatório final em PDF e apresentação.
 
 ## Como Usar
 
-- Explique como acessar e testar as principais funcionalidades.
-- Se necessário, inclua exemplos de uso ou prints.
+- **SQL**: Execute os scripts da pasta `consultas/` em seu SGBD.
+- **Power BI**: Abra o arquivo `.pbix` na pasta `powerbi/` para explorar os dashboards.
+- **Resultados**: Consulte o PDF e a apresentação em `results/` para ver as conclusões detalhadas.
 
 ## Estrutura de Diretórios
 
 ```
-/nome-do-projeto
-├── src/
-├── data/
-├── results/
+/SQL_PowerBI-AnaliseDeDados_HipotesesSpotify
+├── consultas/      # Scripts SQL
+├── dataset/        # Base de dados
+├── powerbi/        # Dashboard em Power BI
+├── results/        # Relatório e apresentação
 └── README.md
 ```
 
 ## Status
 
-- ✅ Concluído
-- 🛠️ Em manutenção
-- 🚧 Em desenvolvimento
+✅ Concluído
 
-> Veja as [issues abertas](https://github.com/usuario/repositorio/issues) para sugestões de melhorias e próximos passos.
+## Mais Sobre Nós
 
-## Mais Sobre Mim
+Este projeto foi desenvolvido em dupla por:
 
-Acesse os arquivos disponíveis na [Pasta Documentos](https://github.com/vitoriapguimaraes/vitoriapguimaraes/tree/main/DOCUMENTOS) para mais informações sobre minhas qualificações e certificações.
+- **Vitória Pistori Guimarães**
+- **Ana Gabriele**
+
+Como parte do **Projeto 2 da Jornada de Dados da Laboratória**.
+
+Acesse mais projetos e informações no [perfil da Ana](https://github.com/anagabrieleb) e no da [Vitória](https://github.com/vitoriapguimaraes).
